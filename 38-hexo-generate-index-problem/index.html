@@ -90,14 +90,14 @@
 <meta name="description" content="如题。">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo generate无法生成index的问题解决">
+<meta property="og:title" content="hexo generate无法生成index的问题:解决方法">
 <meta property="og:url" content="https://frankhan.net/38-hexo-generate-index-problem/index.html">
 <meta property="og:site_name" content="Frank Han">
 <meta property="og:description" content="如题。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-19T04:58:28.021Z">
+<meta property="og:updated_time" content="2019-08-19T07:06:57.684Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo generate无法生成index的问题解决">
+<meta name="twitter:title" content="hexo generate无法生成index的问题:解决方法">
 <meta name="twitter:description" content="如题。">
 
 
@@ -132,7 +132,7 @@
 
 
 
-  <title> hexo generate无法生成index的问题解决 | Frank Han </title>
+  <title> hexo generate无法生成index的问题:解决方法 | Frank Han </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -355,7 +355,7 @@
             
             
               
-                hexo generate无法生成index的问题解决
+                hexo generate无法生成index的问题:解决方法
               
             
           </h2>
@@ -457,6 +457,9 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 <p>时突然发现异样：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(node:<span class="number">23772</span>) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded in <span class="number">1.1</span> s</span><br><span class="line">INFO  <span class="number">0</span> files generated in <span class="number">85</span> ms</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from <span class="keyword">public</span> folder...</span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br><span class="line">Branch 'master' set up to track remote branch 'master' from 'https://github.com/FrankHan/frankhan.github.io.git'.</span><br><span class="line">Everything up-to-date</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+<p>执行：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --debug</span><br></pre></td></tr></table></figure>
+<p>在hexo的任何命令后加–debug可以查看命令的输出日志。</p>
 <p>百度之后一开始以为是：<a href="https://www.jianshu.com/p/86e60a93080f" target="_blank" rel="noopener">https://www.jianshu.com/p/86e60a93080f</a> ，缺少插件的问题，后来发现其实是插件与nodejs不兼容或者nodejs过期的问题，可能是因为之前执行过 <code>npm install hexo-deployer-git --save</code> 使得 hexo-deployer-git 插件与nodejs版本不兼容了。无论如何，最终找到的解决办法是：<a href="https://www.jianshu.com/p/0d178b016d55" target="_blank" rel="noopener">https://www.jianshu.com/p/0d178b016d55</a></p>
 <h2 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h2><p>删除 node_modules</p>
 <h2 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h2><p>在git terminal中执行：</p>
