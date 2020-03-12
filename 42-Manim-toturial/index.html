@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="Frank Han">
 <meta property="og:description" content="Manim安装过程中几个大坑全纪录。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-12T08:06:43.321Z">
+<meta property="og:updated_time" content="2020-03-12T08:28:17.952Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Manim 绘制三体运动视频">
 <meta name="twitter:description" content="Manim安装过程中几个大坑全纪录。">
@@ -133,7 +133,7 @@
 
 
   <title> 使用 Manim 绘制三体运动视频 | Frank Han </title>
-</head>
+<script src="/assets/js/DPlayer.min.js"></script></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
@@ -453,6 +453,8 @@
       
         <script src="\assets\js\APlayer.min.js"> </script><p>Manim安装过程中几个大坑全纪录。</p>
 <a id="more"></a>
+<h2 id="视频完成效果"><a href="#视频完成效果" class="headerlink" title="视频完成效果"></a>视频完成效果</h2><div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"https://github.com/FrankHan/imageFiles/raw/master/00002.mp4","pic":"http://devtest.qiniudn.com/若能绽放光芒.png"}});</script>
+<p>注：浏览视频需要科学上网。</p>
 <h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>这只是一个教如何使用的教程。本教程中涉及的所有代码来自：</p>
 <ul>
 <li><p>manim ： <a href="https://github.com/3b1b/manim/" target="_blank" rel="noopener">https://github.com/3b1b/manim/</a><br>这是一个数学可视化的Python工具。</p>
@@ -494,7 +496,7 @@
 <h2 id="Step-4-使用-Manim-ThreeBody绘制三体运动"><a href="#Step-4-使用-Manim-ThreeBody绘制三体运动" class="headerlink" title="Step 4: 使用 Manim + ThreeBody绘制三体运动"></a>Step 4: 使用 Manim + ThreeBody绘制三体运动</h2><p>1、使用 Cigar666的Manim：（但是前面仍然需要安装好官方的Manim，里面有需要的依赖）</p>
 <p>下载 <a href="https://github.com/cigar666/manim" target="_blank" rel="noopener">https://github.com/cigar666/manim</a> zip（或者yog用Git clone），解压，重命名为 manimCigar666 。</p>
 <p>2、把github下载的my_manim_projects（注意删掉master）文件夹拷贝到<code>D:\manim\manimCigar666</code>里面！或者用git clone。</p>
-<p>3、在 <code>manimCigar666\my_manim_projects\my_projects\resource</code>文件夹中建立文件夹images，下载 <a href="https://raw.githubusercontent.com/FrankHan/imageFiles/master/universe_02.jpg" target="_blank" rel="noopener">https://raw.githubusercontent.com/FrankHan/imageFiles/master/universe_02.jpg</a> 图片并保存在 images 文件夹，注意jpg不要改名。</p>
+<p>3、在 <code>manimCigar666\my_manim_projects\my_projects\resource</code>文件夹中建立文件夹images，下载<br><a href="https://raw.githubusercontent.com/FrankHan/imageFiles/master/universe_02.jpg" target="_blank" rel="noopener">universe_02.jpg</a> 图片并保存在 images 文件夹，注意jpg不要改名。</p>
 <p>注意这个背景jpg必须足够大（宽和高的pixels），不然会报错 buffer。</p>
 <p>4、用 vscode 等编辑器打开 manimCigar666\my_manim_projects\my_utils\my_geometry.py, line 4 改为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from manimlib.utils.color import color_gradient, average_color</span><br></pre></td></tr></table></figure>
@@ -703,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#声明"><span class="nav-number">1.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境说明"><span class="nav-number">2.</span> <span class="nav-text">环境说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-1-安装Python和Pip"><span class="nav-number">3.</span> <span class="nav-text">Step 1: 安装Python和Pip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-2-安装Manim"><span class="nav-number">4.</span> <span class="nav-text">Step 2: 安装Manim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-3-安装完毕，使用-Manim"><span class="nav-number">5.</span> <span class="nav-text">Step 3: 安装完毕，使用 Manim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-4-使用-Manim-ThreeBody绘制三体运动"><span class="nav-number">6.</span> <span class="nav-text">Step 4: 使用 Manim + ThreeBody绘制三体运动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装过程中的几个大坑"><span class="nav-number">7.</span> <span class="nav-text">安装过程中的几个大坑</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#视频完成效果"><span class="nav-number">1.</span> <span class="nav-text">视频完成效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#声明"><span class="nav-number">2.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境说明"><span class="nav-number">3.</span> <span class="nav-text">环境说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-1-安装Python和Pip"><span class="nav-number">4.</span> <span class="nav-text">Step 1: 安装Python和Pip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-2-安装Manim"><span class="nav-number">5.</span> <span class="nav-text">Step 2: 安装Manim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-3-安装完毕，使用-Manim"><span class="nav-number">6.</span> <span class="nav-text">Step 3: 安装完毕，使用 Manim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-4-使用-Manim-ThreeBody绘制三体运动"><span class="nav-number">7.</span> <span class="nav-text">Step 4: 使用 Manim + ThreeBody绘制三体运动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装过程中的几个大坑"><span class="nav-number">8.</span> <span class="nav-text">安装过程中的几个大坑</span></a></li></ol></div>
             
 
           </div>
@@ -920,5 +922,4 @@
 
   
 
-</body>
-</html>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"></link>
