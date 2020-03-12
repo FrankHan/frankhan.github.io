@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://frankhan.net/20-test-video/</loc>
+    <lastmod>2020-03-12</lastmod>
+  </url>  <url>
     <loc>https://frankhan.net/42-Manim-toturial/</loc>
     <lastmod>2020-03-12</lastmod>
   </url>  <url>
@@ -84,9 +87,6 @@
   </url>  <url>
     <loc>https://frankhan.net/17-history-of-time/</loc>
     <lastmod>2017-05-02</lastmod>
-  </url>  <url>
-    <loc>https://frankhan.net/20-test-video/</loc>
-    <lastmod>2017-05-01</lastmod>
   </url>  <url>
     <loc>https://frankhan.net/10-Clarifai-newbee/</loc>
     <lastmod>2017-04-14</lastmod>

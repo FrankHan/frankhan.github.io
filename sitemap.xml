@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://frankhan.net/20-test-video/</loc>
+    
+    <lastmod>2020-03-12T08:10:30.107Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frankhan.net/42-Manim-toturial/</loc>
     
     <lastmod>2020-03-12T08:06:43.321Z</lastmod>
@@ -194,13 +201,6 @@
     <loc>https://frankhan.net/17-history-of-time/</loc>
     
     <lastmod>2017-05-02T12:06:09.698Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frankhan.net/20-test-video/</loc>
-    
-    <lastmod>2017-05-01T14:45:14.759Z</lastmod>
     
   </url>
   
