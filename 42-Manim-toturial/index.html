@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="Frank Han">
 <meta property="og:description" content="Manim安装过程中几个大坑全纪录。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-03-12T12:07:15.911Z">
+<meta property="og:updated_time" content="2020-03-21T02:13:51.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Manim 绘制三体运动视频">
 <meta name="twitter:description" content="Manim安装过程中几个大坑全纪录。">
@@ -475,7 +475,7 @@
 <p>1、安装FFmpeg，一定要按照提示安装<a href="https://www.wikihow.com/Install-FFmpeg-on-Windows" target="_blank" rel="noopener">https://www.wikihow.com/Install-FFmpeg-on-Windows</a><br>安装完之后有个test，也完全通过。</p>
 <p>2、手动安装 Cairo, <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo</a><br>pycairo‑1.18.0‑cp37‑cp37m‑win32.whl已经没了，亲测可用pycairo-1.19.1-cp37-cp37m-win_amd64.whl:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install 你下载下来的路径\pycairo-1.19.1-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-<p>3、 LaTeX 不涉及生成 pdf等的话不用装。</p>
+<p>3、 LaTeX 视频上如果需要写字则需要安装，本案例不涉及、可以不安装。</p>
 <p>4、 SoX. 按照官网说明即可。就几MB很小。</p>
 <p>5、安装 Manim。建议在D盘新建文件夹</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\manim</span><br></pre></td></tr></table></figure>
@@ -506,7 +506,7 @@
 <p>这时你会发现ThreeBody.py中有多个class，分别是不同的调试参数（初始星球质量、位置、速度等），输入 6 或者 7 比较合适。这时shell中会显示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Choose number corresponding to desired scene/arguments.</span><br><span class="line">(Use comma separated list for multiple entries)</span><br><span class="line">Choice(s): 7</span><br><span class="line">[ 1.7027027 -3.7137666  0.       ] [-3.5472973  -0.68267768  0.        ] [1.7027027  2.34841123 0.        ]</span><br><span class="line">Waiting 11:  31%|####################9</span><br></pre></td></tr></table></figure>
 <p>这就是正在渲染了。注意 Waiting 11 就是正在渲染视频的第11段，这与 ThreeBody.py 中写的有关：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">self.wait(1) #视频的第1部分，共1s</span><br><span class="line">self.wait(2)</span><br><span class="line">self.wait(4)</span><br><span class="line">self.wait(10)</span><br><span class="line">self.wait(15)</span><br><span class="line">self.wait(25)</span><br><span class="line">self.wait(32) #视频的第2部分，共32s</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">self.wait(1) #视频的第1部分，共1s</span><br><span class="line">self.wait(2)</span><br><span class="line">self.wait(4)</span><br><span class="line">self.wait(10)</span><br><span class="line">self.wait(15)</span><br><span class="line">self.wait(25)</span><br><span class="line">self.wait(32) #视频的第7部分，共32s</span><br></pre></td></tr></table></figure>
 <p>这样是方便随时查看每一段有没有什么问题。</p>
 <p>渲染完之后会自动预览总视频，总视频时长是以上每一段相加。</p>
 <h2 id="安装过程中的几个大坑"><a href="#安装过程中的几个大坑" class="headerlink" title="安装过程中的几个大坑"></a>安装过程中的几个大坑</h2><p>1、编码问题</p>
@@ -531,6 +531,9 @@
 <p>简明易懂的几何级数可视化展示 | manim制作:<br><a href="https://www.bilibili.com/video/av77760417" target="_blank" rel="noopener">https://www.bilibili.com/video/av77760417</a></p>
 <p>Manim的作者是一个YouTube数学可视化视频制作者，他在bilibili有个搬运账号：</p>
 <p><a href="https://space.bilibili.com/88461692" target="_blank" rel="noopener">https://space.bilibili.com/88461692</a></p>
+<blockquote>
+<p>修改于 21/03/2020</p>
+</blockquote>
 
       
     </div>
