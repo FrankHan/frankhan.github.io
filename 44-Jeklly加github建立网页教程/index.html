@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Github,域名," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -87,20 +87,18 @@
 
 
 
-<meta name="description" content="耐心，so easy!">
-<meta name="keywords" content="Github,域名">
+<meta name="description" content="简单、模式化、同时自己修改的余地也大的网页解决方案。">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用github pages托管以及自定义域名配置">
-<meta property="og:url" content="https://frankhan.net/26-github-pages-with-personal-domain/index.html">
+<meta property="og:title" content="44-Jeklly加github建立网页教程">
+<meta property="og:url" content="https://frankhan.net/44-Jeklly加github建立网页教程/index.html">
 <meta property="og:site_name" content="Frank Han">
-<meta property="og:description" content="耐心，so easy!">
+<meta property="og:description" content="简单、模式化、同时自己修改的余地也大的网页解决方案。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://ooi79olia.bkt.clouddn.com/Learning/coding/github/github%E4%B8%8A%E4%BC%A0.PNG">
-<meta property="og:updated_time" content="2017-11-28T02:25:17.164Z">
+<meta property="og:updated_time" content="2021-01-09T08:22:48.989Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用github pages托管以及自定义域名配置">
-<meta name="twitter:description" content="耐心，so easy!">
-<meta name="twitter:image" content="http://ooi79olia.bkt.clouddn.com/Learning/coding/github/github%E4%B8%8A%E4%BC%A0.PNG">
+<meta name="twitter:title" content="44-Jeklly加github建立网页教程">
+<meta name="twitter:description" content="简单、模式化、同时自己修改的余地也大的网页解决方案。">
 
 
 
@@ -128,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://frankhan.net/26-github-pages-with-personal-domain/"/>
+  <link rel="canonical" href="https://frankhan.net/44-Jeklly加github建立网页教程/"/>
 
 
 
 
 
-  <title> 使用github pages托管以及自定义域名配置 | Frank Han </title>
+  <title> 44-Jeklly加github建立网页教程 | Frank Han </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -336,7 +334,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://frankhan.net/26-github-pages-with-personal-domain/">
+    <link itemprop="mainEntityOfPage" href="https://frankhan.net/44-Jeklly加github建立网页教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Frank Han">
@@ -357,7 +355,7 @@
             
             
               
-                使用github pages托管以及自定义域名配置
+                44-Jeklly加github建立网页教程
               
             
           </h2>
@@ -372,8 +370,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-28T09:41:57+08:00">
-                2017-07-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-01-09T14:40:19+08:00">
+                2021-01-09
               </time>
             
 
@@ -406,8 +404,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Diary/广义前端/" itemprop="url" rel="index">
-                    <span itemprop="name">广义前端</span>
+                  <a href="/categories/Diary/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -425,8 +423,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/26-github-pages-with-personal-domain/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="26-github-pages-with-personal-domain/" itemprop="commentsCount"></span>
+                <a href="/44-Jeklly加github建立网页教程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="44-Jeklly加github建立网页教程/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -453,47 +451,52 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p>耐心，so easy!</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>简单、模式化、同时自己修改的余地也大的网页解决方案。</p>
 <a id="more"></a>
-<p>用github，或者国内类似的coding.net、码云来托管静态网站可以说是非常方便。这其中github和coding.net又支持自定义域名。自定义域名是指，你可以在别处购买域名，然后github提供一个域名指向的功能，从而你可以实现：github托管、自定义域名访问。</p>
-<p>那么具体如何来做呢？</p>
-<h2 id="注册一个github账号"><a href="#注册一个github账号" class="headerlink" title="注册一个github账号"></a>注册一个<a href="www.github.com">github账号</a></h2><p>注意：github用户名应当是唯一的，不与其他人重复。</p>
-<h2 id="登陆github，新建一个仓库"><a href="#登陆github，新建一个仓库" class="headerlink" title="登陆github，新建一个仓库"></a>登陆github，新建一个仓库</h2><p>新建一个项目工程（即repository，仓库），在Create a new repository页面，为仓库命名为比如 myPersonalWebpage ，勾选上：Initialize this repository with a README。</p>
-<h2 id="在本地代码文件中添加CNAME文件"><a href="#在本地代码文件中添加CNAME文件" class="headerlink" title="在本地代码文件中添加CNAME文件"></a>在本地代码文件中添加CNAME文件</h2><p>在本地代码的根目录新建一个txt文件命名为 CNAME.txt，打开CNAME.txt，输入你已经申请的域名，比如johndoe.com，保存并退出。然后，删除CNAME.txt 文件名的 .txt后缀。</p>
-<h2 id="上传本地代码文件到github"><a href="#上传本地代码文件到github" class="headerlink" title="上传本地代码文件到github"></a>上传本地代码文件到github</h2><h3 id="方法一：网页上传"><a href="#方法一：网页上传" class="headerlink" title="方法一：网页上传"></a>方法一：网页上传</h3><p>在仓库myPersonalWebpage的详情页面，点击 Upload files， 然后将本地文件全选之后（如下图），拖动到上传页面，等待上传完成的进度条。全部上传完之后，到当前网页的最下面，点击 commit 。就上传完成了。</p>
-<p><img src="http://ooi79olia.bkt.clouddn.com/Learning/coding/github/github%E4%B8%8A%E4%BC%A0.PNG" alt="图：全选上传"></p>
-<p>以后每一次上传的时候，如果是相同的文件名，则新文件会自动替换掉旧文件。</p>
-<h3 id="方法二：使用Git管理工具"><a href="#方法二：使用Git管理工具" class="headerlink" title="方法二：使用Git管理工具"></a>方法二：使用Git管理工具</h3><p>Git是命令行的方式，更为智能，但较为复杂，我们后面再讲。 </p>
-<h2 id="开启github-pages服务"><a href="#开启github-pages服务" class="headerlink" title="开启github pages服务"></a>开启github pages服务</h2><p>在仓库myPersonalWebpage的详情页面，点击上方的Settings，在网页下方的GitHub Pages一栏，将Source从None改为master branch，点击右侧的Save。</p>
-<h2 id="在购买域名处为域名配置解析"><a href="#在购买域名处为域名配置解析" class="headerlink" title="在购买域名处为域名配置解析"></a>在购买域名处为域名配置解析</h2><p>在自己购买域名的地方，进行解析设置如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">记录类型</th>
-<th style="text-align:center">主机记录</th>
-<th style="text-align:center">记录值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">CNAME</td>
-<td style="text-align:center">www</td>
-<td style="text-align:center">YourGithubUsername.github.io</td>
-</tr>
-<tr>
-<td style="text-align:center">A</td>
-<td style="text-align:center">@</td>
-<td style="text-align:center">192.30.252.154</td>
-</tr>
-<tr>
-<td style="text-align:center">A</td>
-<td style="text-align:center">@</td>
-<td style="text-align:center">192.30.252.153</td>
-</tr>
-</tbody>
-</table>
-<p>注意：YourGithubUsername更换为你的github用户名。</p>
-<h2 id="Finished"><a href="#Finished" class="headerlink" title="Finished!"></a>Finished!</h2><p>解析的时间大约需要3-5分钟，此时再访问你的域名johndoe.com，就可以看到你的个人网站了！</p>
+<p>对于个人来说，不像大公司那样网页跟新频率那么高，而且个人网站多数是静态网页，比如博客、展示、简历等。在这种情况下主要需要考虑撰写、代码托管：</p>
+<ul>
+<li><p>撰写：</p>
+<ul>
+<li><p>wordpress、wix等这种是一类，这类是收费的。优点：这类提供了撰写＋托管的服务，基本上不懂html、css也可以实现建站。缺点：自定义（自己修改点html、css）的程度是最低的。而且网站下面基本上都有wordpress或者wix的标识，此外wix这种很难自定义域名。</p>
+</li>
+<li><p>Dreamweaver：优点：很少，上古时代的网页建站软件，不需要写html、css代码。缺点：经常排版错误、工具也特别卡，基本上是落后于时代的产品。十年前的网页三剑客，flash、dreamweaver基本上行将就木，没人学了。</p>
+</li>
+<li><p>网上的html模板：有很多html模板商城。优点：自定义程度高，可以自行修改代码。缺点：不方便撰写，尤其是写博客等，不可能手动一行一行敲&lt;&gt;换行、空格标签。打开文件满屏的&lt;&gt;标签，影响内容写作体验。而且很多老的html页面是不支持pc、mobile端自适应的。</p>
+</li>
+<li><p>Jekyll：今天我想推荐的工具。一个Jekyll网站 = Markdown + HTML + CSS。通常，只需要在免费的网站库（如 <a href="https://jekyllthemes.io/）挑选好Jekyll模板，其中html、css都是写好的基本不用更改，内容创作只需要写markdown，而markdown基本就像写word或者记事本（markdown语法网上搜索就很多：https://www.cnblogs.com/xiaoliangL/p/7026394.html），可以聚焦关注内容，不用谢html标签。而自定义的空间有很大，如果对样式不满意，可以自己修改Jekyll模板中的html或者css。" target="_blank" rel="noopener">https://jekyllthemes.io/）挑选好Jekyll模板，其中html、css都是写好的基本不用更改，内容创作只需要写markdown，而markdown基本就像写word或者记事本（markdown语法网上搜索就很多：https://www.cnblogs.com/xiaoliangL/p/7026394.html），可以聚焦关注内容，不用谢html标签。而自定义的空间有很大，如果对样式不满意，可以自己修改Jekyll模板中的html或者css。</a></p>
+</li>
+</ul>
+</li>
+<li><p>托管：github或者国内的码云托管肯定是首选。Jekyll或者自己的html都可以使用github托管，全部文件上传到一个github repo、再在repo设置中开启GitHub Pages功能即可实现网址访问。</p>
+</li>
+</ul>
+<p>下面做一个全过程步骤示例：</p>
+<h2 id="1-挑选一个自己中意的-Jekyll-模板"><a href="#1-挑选一个自己中意的-Jekyll-模板" class="headerlink" title="1. 挑选一个自己中意的 Jekyll 模板"></a>1. 挑选一个自己中意的 Jekyll 模板</h2><p>Jekyll模板库搜索能找到很多，比如：</p>
+<ul>
+<li><p><a href="https://jekyllthemes.io/" target="_blank" rel="noopener">https://jekyllthemes.io/</a> </p>
+<p>点击右上角的 <code>Browse Themes</code> 还能看到分类的 portfolio themes、blog、GitHub Pages themes等。</p>
+</li>
+<li><a href="https://jekyllrb.com/docs/themes/" target="_blank" rel="noopener">https://jekyllrb.com/docs/themes/</a></li>
+<li><p><a href="http://jekyllthemes.org/" target="_blank" rel="noopener">http://jekyllthemes.org/</a></p>
+<p>我们选择一个免费的theme比如：<br><a href="https://jekyllthemes.io/theme/gridster-jekyll-theme" target="_blank" rel="noopener">https://jekyllthemes.io/theme/gridster-jekyll-theme</a></p>
+<p>点击 ‘Get on github’后到达：<a href="https://github.com/DigitalMindCH/gridster-jekyll-theme" target="_blank" rel="noopener">https://github.com/DigitalMindCH/gridster-jekyll-theme</a></p>
+<p>点击 “Code”-down zip下载全部代码。</p>
+<h2 id="2-开始一些基本设置"><a href="#2-开始一些基本设置" class="headerlink" title="2. 开始一些基本设置"></a>2. 开始一些基本设置</h2><p>网站的名字、描述可以被Google等搜索到，其设置就在下载的文件夹的 _config.yml 文件中，将这个文件用sublime或者vscode（注意不是visual studio！）等记事本编辑器打开，就可以自己修改其中的设置了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name: My Jekyll Site!</span><br><span class="line">description: test jekyll site</span><br></pre></td></tr></table></figure>
+<p>修改后保存。</p>
+<h2 id="3-代码托管到github"><a href="#3-代码托管到github" class="headerlink" title="3. 代码托管到github"></a>3. 代码托管到github</h2><p>打开github网站，登陆，新建一个repo：Repository name比如写 my1jeykyll，点击 Add a README file，生成repo。</p>
+<p>打开 <a href="https://github.com/你的github用户名/my1jeykyll/upload/main" target="_blank" rel="noopener">https://github.com/你的github用户名/my1jeykyll/upload/main</a>  ，把整个gridster-jekyll-theme-master文件夹里面的文件 ctrl+A全选，拖到这个网页的上传区域，就把代码托管到github了。由于文件比较多，可能需要分批选中拖过来。注意整个文件夹 _data 、 _includes都可以选中这个文件夹拖进来，注意不要改变文件树的相对路径关系。（其实这里应该用git客户端更好更自动一些）</p>
+<p>上传完成后在 repo 界面的settings-github pages：开启github pages，注意如果本身已经绑定了域名，https的要点击开启https。</p>
+<p>托管完成，可以访问了： <a href="https://frankhan.net/my1jeykyll/">https://frankhan.net/my1jeykyll/</a></p>
+</li>
+</ul>
+<h2 id="4-修改网页具体内容"><a href="#4-修改网页具体内容" class="headerlink" title="4. 修改网页具体内容"></a>4. 修改网页具体内容</h2><p>Jekyll书写的内容一般都很好找，比如：</p>
+<ul>
+<li><p>网站首页的post都在：gridster-jekyll-theme-master_posts</p>
+</li>
+<li><p>图片都放置在： gridster-jekyll-theme-master\img</p>
+</li>
+</ul>
 
       
     </div>
@@ -523,9 +526,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Github/" rel="tag"># Github</a>
-          
-            <a href="/tags/域名/" rel="tag"># 域名</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
         </div>
       
@@ -538,8 +539,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/5-hexo-markdown-grammar/" rel="next" title="自己常用的 hexo 和 markdown 写作语法汇总">
-                <i class="fa fa-chevron-left"></i> 自己常用的 hexo 和 markdown 写作语法汇总
+              <a href="/43-Logon failed解决办法/" rel="next" title="Logon failed, use ctrl+c to cancel basic credential prompt.">
+                <i class="fa fa-chevron-left"></i> Logon failed, use ctrl+c to cancel basic credential prompt.
               </a>
             
           </div>
@@ -547,10 +548,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/27-starry-night/" rel="prev" title="Starry starry night">
-                Starry starry night <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -681,7 +678,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册一个github账号"><span class="nav-number">1.</span> <span class="nav-text">注册一个github账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登陆github，新建一个仓库"><span class="nav-number">2.</span> <span class="nav-text">登陆github，新建一个仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在本地代码文件中添加CNAME文件"><span class="nav-number">3.</span> <span class="nav-text">在本地代码文件中添加CNAME文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上传本地代码文件到github"><span class="nav-number">4.</span> <span class="nav-text">上传本地代码文件到github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一：网页上传"><span class="nav-number">4.1.</span> <span class="nav-text">方法一：网页上传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二：使用Git管理工具"><span class="nav-number">4.2.</span> <span class="nav-text">方法二：使用Git管理工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启github-pages服务"><span class="nav-number">5.</span> <span class="nav-text">开启github pages服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在购买域名处为域名配置解析"><span class="nav-number">6.</span> <span class="nav-text">在购买域名处为域名配置解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finished"><span class="nav-number">7.</span> <span class="nav-text">Finished!</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-挑选一个自己中意的-Jekyll-模板"><span class="nav-number">1.</span> <span class="nav-text">1. 挑选一个自己中意的 Jekyll 模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-开始一些基本设置"><span class="nav-number">2.</span> <span class="nav-text">2. 开始一些基本设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-代码托管到github"><span class="nav-number">3.</span> <span class="nav-text">3. 代码托管到github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-修改网页具体内容"><span class="nav-number">4.</span> <span class="nav-text">4. 修改网页具体内容</span></a></li></ol></div>
             
 
           </div>
@@ -829,7 +826,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 89392, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 89392, xid: "26-github-pages-with-personal-domain/"});
+		_hcwp.push({widget:"Stream", widget_id: 89392, xid: "44-Jeklly加github建立网页教程/"});
 		
 
 		(function() {
